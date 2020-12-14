@@ -19,7 +19,6 @@
             android:id="@+id/web"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/adView"
             >
         </WebView>
         <include layout="@layout/progress_loading"
@@ -35,7 +34,6 @@
             android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
             ads:adSize="BANNER"
             ads:adUnitId="@string/admobBanner"/>
