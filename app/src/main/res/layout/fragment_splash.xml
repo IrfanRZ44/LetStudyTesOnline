@@ -4,29 +4,43 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/white"
-    tools:context="com.exomatik.baseapplication.ui.auth.splash.SplashFragment"
+    tools:context="id.exomatik.letstudydaftar.ui.main.splash.SplashFragment"
     >
-    <androidx.appcompat.widget.AppCompatImageButton
-        android:layout_width="@dimen/_170"
-        android:layout_height="@dimen/_170"
-        android:layout_marginBottom="@dimen/h2"
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:padding="@dimen/h2"
-        android:scaleType="fitCenter"
-        android:background="@drawable/ic_launcher_background"
-        android:src="@drawable/ic_launcher_foreground"
+        android:scaleType="centerInside"
+        android:src="@drawable/letstudy_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/_40"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="@dimen/h5"
+        android:layout_marginStart="@dimen/h5"
         android:id="@+id/img"
+        />
+
+    <include layout="@layout/progress_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
         />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/base_application"
+        android:text="@string/_2020_all_right_reserved_letstudy_cpns"
         style="@style/textStandardWhite"
         android:textColor="@color/colorPrimary"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/h3"
         android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/h5"
+        android:layout_marginRight="@dimen/h5"
+        android:layout_marginEnd="@dimen/h5"
+        android:layout_marginStart="@dimen/h5"
+        android:textAlignment="center"
+        android:fontFamily="@font/open_sans_regular"
+        tools:targetApi="jelly_bean"
         />
 </RelativeLayout>

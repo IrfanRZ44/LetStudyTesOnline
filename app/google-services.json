@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "528955914581",
+    "project_id": "letstudy---pendaftaran",
+    "storage_bucket": "letstudy---pendaftaran.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528955914581:android:4bed7fa5377dd55a4757dc",
+        "android_client_info": {
+          "package_name": "id.exomatik.letstudydaftar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528955914581-6om33ujnhfp1mcciniiglrnpetk9p5ku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.exomatik.letstudydaftar",
+            "certificate_hash": "bd7f1a1c80c3679e2fd4d62f8149558e37527daa"
+          }
+        },
+        {
+          "client_id": "528955914581-f55gmd32m44lnf477in3t3d1bqi7updl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4wInc0qkUpe47oiADB5GL9sNEdsHPfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528955914581-f55gmd32m44lnf477in3t3d1bqi7updl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
