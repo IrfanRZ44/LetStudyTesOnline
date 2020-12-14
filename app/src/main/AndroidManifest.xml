@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="id.exomatik.letstudydaftar">
+    package="id.exomatik.letstudytesonline">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,7 +20,7 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m"
         >
-        <activity android:name=".ui.main.MainActivity"
+        <activity android:name="id.exomatik.letstudytesonline.ui.main.MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/CustomTheme"

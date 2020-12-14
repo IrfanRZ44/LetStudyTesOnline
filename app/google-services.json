@@ -41,6 +41,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528955914581:android:fc5817300fac87344757dc",
+        "android_client_info": {
+          "package_name": "id.exomatik.letstudytesonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "528955914581-rv64humq8i1njgl88o1obbaubc2trefb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.exomatik.letstudytesonline",
+            "certificate_hash": "bd7f1a1c80c3679e2fd4d62f8149558e37527daa"
+          }
+        },
+        {
+          "client_id": "528955914581-f55gmd32m44lnf477in3t3d1bqi7updl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT4wInc0qkUpe47oiADB5GL9sNEdsHPfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "528955914581-f55gmd32m44lnf477in3t3d1bqi7updl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

@@ -8,12 +8,12 @@
     app:startDestination="@id/splashFragment">
     <fragment
         android:id="@+id/splashFragment"
-        android:name="id.exomatik.letstudydaftar.ui.main.splash.SplashFragment"
+        android:name="id.exomatik.letstudytesonline.ui.main.splash.SplashFragment"
         android:label="Splash Screen"
         tools:layout="@layout/fragment_splash" />
     <fragment
         android:id="@+id/mainFragment"
-        android:name="id.exomatik.letstudydaftar.ui.main.main.MainFragment"
+        android:name="id.exomatik.letstudytesonline.ui.main.main.MainFragment"
         android:label="Main Activity"
         tools:layout="@layout/fragment_main" />
 </navigation>
