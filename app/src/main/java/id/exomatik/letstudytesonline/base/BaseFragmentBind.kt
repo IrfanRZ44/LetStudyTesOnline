@@ -19,7 +19,6 @@ abstract class BaseFragmentBind<B : ViewDataBinding> : Fragment() {
 
         savedInstanceState = paramBundle
         myCodeHere()
-
         return bind.root
     }
 

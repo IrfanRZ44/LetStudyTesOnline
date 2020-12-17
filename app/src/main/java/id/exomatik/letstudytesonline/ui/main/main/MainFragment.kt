@@ -34,9 +34,8 @@ class MainFragment : BaseFragmentBind<FragmentMainBinding>(){
         viewModel = MainViewModel()
         bind.viewModel = viewModel
 
-        viewModel.setUpWebView(bind.web)
+        viewModel.setUpWebView(bind.web, bind.adView, context, activity)
         setUpWebChromeClient()
-        viewModel.setUpAdmob(context, bind.adView)
     }
 
     private fun setUpWebChromeClient(){

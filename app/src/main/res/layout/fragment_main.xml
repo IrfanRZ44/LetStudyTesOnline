@@ -14,11 +14,13 @@
         android:background="@color/white"
         snackbar="@{viewModel.message}"
         android:theme="@style/CustomStyle"
+        android:id="@+id/rlRoot"
         >
         <WebView
             android:id="@+id/web"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@id/adView"
             >
         </WebView>
         <include layout="@layout/progress_loading"
@@ -36,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            ads:adSize="BANNER"
+            ads:adSize="FULL_BANNER"
             ads:adUnitId="@string/admobBanner"/>
     </RelativeLayout>
 </layout>
