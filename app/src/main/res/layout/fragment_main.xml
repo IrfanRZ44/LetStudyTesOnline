@@ -20,7 +20,6 @@
             android:id="@+id/web"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@id/adView"
             >
         </WebView>
         <include layout="@layout/progress_loading"
@@ -39,6 +38,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             ads:adSize="FULL_BANNER"
-            ads:adUnitId="@string/admobBanner"/>
+            ads:adUnitId="@string/admobBanner">
+        </com.google.android.gms.ads.AdView>
     </RelativeLayout>
 </layout>

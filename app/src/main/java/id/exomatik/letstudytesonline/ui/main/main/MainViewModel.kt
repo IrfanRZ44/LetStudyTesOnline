@@ -17,34 +17,6 @@ import id.exomatik.letstudytesonline.utils.checkInternetConnection
 
 class MainViewModel : BaseViewModel() {
 
-    private fun setUpAdmob(context: Context?, adView: AdView){
-        MobileAds.initialize(context) {}
-        val adRequest = AdRequest.Builder().build()
-        adView.loadAd(adRequest)
-
-        adView.adListener = object: AdListener() {
-            override fun onAdLoaded() {
-                message.value = "Berhasil memuat iklan"
-            }
-
-            override fun onAdFailedToLoad(error : LoadAdError) {
-                Toast.makeText(context, error.toString(), Toast.LENGTH_LONG).show()
-            }
-
-            override fun onAdOpened() {
-            }
-
-            override fun onAdClicked() {
-            }
-
-            override fun onAdLeftApplication() {
-            }
-
-            override fun onAdClosed() {
-            }
-        }
-    }
-
     @SuppressLint("SetJavaScriptEnabled")
     fun setUpWebView(web: WebView, adView: AdView, context: Context?, activity: Activity?){
         cekKoneksi(context, adView, web, activity)
@@ -89,7 +61,6 @@ class MainViewModel : BaseViewModel() {
     private fun cekKoneksi(context: Context?, adView: AdView, web: WebView, activity: Activity?){
         if(checkInternetConnection(context)){
             web.loadUrl(Constant.urlWeb)
-            setUpAdmob(context, adView)
         } else{
             val alertDialog = AlertDialog.Builder(context?:throw Exception("Unknown Error")).create()
             alertDialog.setTitle("Error")

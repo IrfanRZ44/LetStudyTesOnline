@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">LetStudy - Tes Online</string>
     <string name="admobID">ca-app-pub-1776006511024568~6706476594</string>
-    <string name="admobBanner">ca-app-pub-1776006511024568/4409833355</string>
+    <string name="admobBanner">ca-app-pub-1776006511024568/4075172309</string>
 
+<!--  Tes Admob  -->
 <!--    <string name="admobID">ca-app-pub-3940256099942544~3347511713</string>-->
 <!--    <string name="admobBanner">ca-app-pub-3940256099942544/6300978111</string>-->
 
