@@ -35,43 +35,8 @@ class MainFragment : BaseFragmentBind<FragmentMainBinding>(){
         viewModel = MainViewModel()
         bind.viewModel = viewModel
 
-        viewModel.setUpWebView(bind.web, bind.adView, context, activity)
+        viewModel.setUpWebView(bind.web, context, activity)
         setUpWebChromeClient()
-        setUpAdmob()
-    }
-
-    private fun setUpAdmob(){
-        MobileAds.initialize(context) {}
-        val adRequest = AdRequest.Builder().build()
-        bind.adView.loadAd(adRequest)
-
-        bind.adView.adListener = object: AdListener() {
-            override fun onAdLoaded() {
-                Toast.makeText(context, "Loaded", Toast.LENGTH_LONG).show()
-            }
-
-            override fun onAdFailedToLoad(adError : LoadAdError) {
-                Toast.makeText(context, adError.toString(), Toast.LENGTH_LONG).show()
-            }
-
-            override fun onAdOpened() {
-                // Code to be executed when an ad opens an overlay that
-                // covers the screen.
-            }
-
-            override fun onAdClicked() {
-                // Code to be executed when the user clicks on an ad.
-            }
-
-            override fun onAdLeftApplication() {
-                // Code to be executed when the user has left the app.
-            }
-
-            override fun onAdClosed() {
-                // Code to be executed when the user is about to return
-                // to the app after tapping on an ad.
-            }
-        }
     }
 
     private fun setUpWebChromeClient(){

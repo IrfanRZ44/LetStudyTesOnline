@@ -8,9 +8,7 @@ import android.graphics.Bitmap
 import android.view.View
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.google.android.gms.ads.*
 import id.exomatik.letstudytesonline.base.BaseViewModel
 import id.exomatik.letstudytesonline.utils.Constant
 import id.exomatik.letstudytesonline.utils.checkInternetConnection
@@ -18,8 +16,8 @@ import id.exomatik.letstudytesonline.utils.checkInternetConnection
 class MainViewModel : BaseViewModel() {
 
     @SuppressLint("SetJavaScriptEnabled")
-    fun setUpWebView(web: WebView, adView: AdView, context: Context?, activity: Activity?){
-        cekKoneksi(context, adView, web, activity)
+    fun setUpWebView(web: WebView, context: Context?, activity: Activity?){
+        cekKoneksi(context, web, activity)
 
         web.webViewClient = object : WebViewClient() {
             override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
@@ -42,7 +40,7 @@ class MainViewModel : BaseViewModel() {
                 } catch (e: Exception) {
                 }
 
-                cekKoneksi(context, adView, web, activity)
+                cekKoneksi(context, web, activity)
             }
         }
         web.settings.loadsImagesAutomatically = true
@@ -58,7 +56,11 @@ class MainViewModel : BaseViewModel() {
         web.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
     }
 
-    private fun cekKoneksi(context: Context?, adView: AdView, web: WebView, activity: Activity?){
+    private fun cekKoneksi(
+        context: Context?,
+        web: WebView,
+        activity: Activity?
+    ){
         if(checkInternetConnection(context)){
             web.loadUrl(Constant.urlWeb)
         } else{
